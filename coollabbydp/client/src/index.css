@@ -1,0 +1,74 @@
+/* Reset Layout for Monaco */
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* REMOVE center layout */
+body {
+  display: block;
+  min-height: 100vh;
+}
+
+/* Keep basic theme */
+:root {
+  font-family: 'Segoe UI', Trebuchet MS, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.92);
+  background-color: #0f0f15;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #1a1a2e;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background-color: #252540;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+input {
+  background-color: #1a1a2e;
+  border: 1px solid #2a2a3e;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+select {
+  transition: all 0.2s ease;
+}
+
+select:focus {
+  outline: none;
+}
